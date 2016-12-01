@@ -1,0 +1,15 @@
+
+<div class="row">
+<p>forcast</p>
+<p>{{city}}</p>
+<a href="#/" class="btn btn-primary"> back</a>
+</div>
+<div ng-repeat="w in weatherResult.list">
+    <div class="row">
+        <div class="col-md-12">
+            <weather-report weather-day="w" convert-to-date="convertToDate(dt)"></weather-report>
+            <more-info weather-day="w" show-max-and-min="showMaxAndMin(day)"></more-info>
+            <test weather-day="w"></test>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3" >
+		<label for="forcast">Forcast by City</label>
+<!--
+		<div class="form-group">
+			<input id="forcast" type="text" class="form-control" ng-model="city">
+		</div>
+		<a href="#/forcast" class="btn btn-primary"> forcast</a>	
+-->	
+		<form ng-submit="submit()">
+			<div class="form-group">
+				<input id="forcast" type="text" class="form-control" ng-model="city">
+				<p>this is for test: {{main.test}}</p>
+				<input id="test" type="text" class="form-control" ng-model="main.test">
+				
+			</div>
+			<input type="submit" class="btn btn-primary" value="forcast">
+		</form>
+
+		<div ng-controller="pc as parent">
+			parent message: {{parent.message}}
+			<input id="forcast" type="text" class="form-control" ng-model="parent.message">
+			<div ng-controller="cc as child">
+				child message: {{child.message}}
+				<input id="forcast" type="text" class="form-control" ng-model="child.message">
+			</div>
+		</div>
+	</div>
+</div>
