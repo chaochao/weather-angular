@@ -1,5 +1,5 @@
 
-weatherApp.controller('mainController', ['$scope', 'cityService', '$location',function($scope, cityService, $location){
+weatherApp.controller('mainController', ['FilmFactory', '$scope', 'cityService', '$location',function(FilmFactory, $scope, cityService, $location){
 	// this is bind to scope
 	$scope.city = cityService.city;
 	// this is bind to controller 
